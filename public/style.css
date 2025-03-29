@@ -1,0 +1,159 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Smooth background gradient */
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #111;
+    color: #eee;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Container */
+.form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    width: 400px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Elements */
+.form-element {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-element input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #0072ff;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-element input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0px 0px 8px rgba(0, 114, 255, 0.5);
+}
+
+/* Button Styling */
+.form-element button {
+    width: 100%;
+    padding: 12px;
+    background: #0072ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.form-element button:hover {
+    background: #0051cc;
+}
+
+/* Result Display */
+.result {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.result a {
+    color: #0072ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.result a:hover {
+    color: #0051cc;
+    text-decoration: underline;
+}
+
+/* Shortened Links Table */
+.list {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list table th, .list table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.list table thead {
+    background: #0072ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.list table tbody tr {
+    background: rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.list table tbody tr:hover {
+    background: rgba(0, 114, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+
+    .list {
+        width: 95%;
+    }
+
+    .list table th, .list table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
