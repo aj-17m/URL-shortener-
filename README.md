@@ -10,7 +10,6 @@
    USE shorturls;
    Create the links Table:
 
-
     CREATE TABLE links (
     id INT AUTO_INCREMENT PRIMARY KEY,
     longurl TEXT NOT NULL,
@@ -19,4 +18,6 @@
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     expires_at TIMESTAMP NULL
 );
+
+2. ........ Install All de endencies
 
