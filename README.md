@@ -19,5 +19,5 @@
     expires_at TIMESTAMP NULL
 );
 
-2. ........ Install All de endencies
+2. ........ Install All de endencies........
 
